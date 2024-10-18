@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: pay
+restkeeper:
+  easyalipay:
+    protocol: https
+    gatewayHost: openapi.alipay.com
+    signType: RSA2
+    appId: 20************77077
+    merchantPrivateKey: MIIEvgIBADANBgkqhkiG9w0BAQE*******************************************6tffgobmEo9MFXmxX6yVbXSpTNjh72ziBBZ1I4R8RWFG8Vnr4VjQtvYKK6eDWVwAtXEg85XONE6XB6izpcrra7wshbsKdfFaVJnZK***********************HMzDH62exO62gXGcLO+v2hW7I3cMJUrpRKY6VYenpT9wFEvP5ByXPenuVVcICBUqALxWPhXoSew5Hg2ezKRqAWavRczA1j3hDjlaXrqvT/DoS5Dm6UAEUVlI98xAgMBAAECggEAWh8LOsPPzkkIaATjplNHQCy79K8l2idB9fzQ5p+tKUA9mVpWNGTJIGSRf7vZKLKcaJKlFHRid/a4M8v4HW34Z2DfR1Dy2SqQtI45YX0X+LtjD277gJxpcMWyDgEIxn8S1ei5zvkfVrXUM839La7/Aui84qw79ZdXrcgkilWmz/KCGqjN2nIrbDeiTB1HzR0mWOqurYXiQVz53jUOSnHfGYsHOVTryMh5e6ZHOsPkk3iH/JB7lVZ97ZOBb3/S+WWAMu9NGGLkvuz/l1lTbH5cdBRClK0/btlNrLJgsam2cKsrwfuQNAy65vrk9QLHtk1Zyd86yLh4mX34ihayX6uDoQKBgQD6MmE1sc05ONShmRbRFOAuFM8jGGExt9D54HA7qnpRZl9m2oosQfIO7wfDY5l2rYBLF8jgzsvlzdZmR8DyapNE0hApPr5migROe************************************YOioYSMxQKBgQDIOkcVLyuAqqBkr0Jsyer6Vwbq44NUkNPwUh3rzU2F6G0oUX5snu28IcR6Weftz7sqB5n9qzmVG2KfXkp2yZ5Ne5WHR+wKa4o4NPg59+3Que9SJL32/sutFQ8DBgetanOZqueUqR5aZJxi66UglMz7Hj6AtTtVLNTLaWwyQebHfQKBgQC8+ShrQexb+AzCMbsGGNpqc9UwEM34m3oAAgFDT7Qrn0MXkKEkZHrLxMb8UVIsTUfFcCWNhySCYkI55qBZeR3asT77qCRvlndCQBwbd+TI5crzIdsLndwCVNjfcpKyh4FyJ6o1z43p/M2lnUSwMQ47l9daiT6hJmFcs0rln1FacQKBgDLolmAtgRsSxvsykGoGoMcLz4dzV1XuCOUGi/MDXR2Z7f8dUU6ezgVSdJlDOLP/aDAUhLO5kEd4EghBOh+fva8np+oggERZ+We3GBHtFrtGOzIgg2hEelbEju+O3e7arQ+6I21p3nzPLe/8yBx*******************cFijWuUEjTtQb4EPZDVnCW7x++F6LlHNSoDTI+rGDwN2DPEkqsiFHLH2ehk05HTKD8rArTKSwWT18bk7j+QApIPh/6nnAu/yL8jhnRz7+8nKREq5+VrodZFfC
+    alipayPublicKey: MIIBIjANBgkqhk*********************************************************************grG9iV5bXyg02jFL8zfJ3fczliLPL7y+YmocIBtit36rxoRTjTc4eYKJwMTEZyhcYFzbzKCJuEp7l3ok7Guse2C8**************************oNC4UCYnLq6W1lX0K8P9GT6SRIM1PaPUGl2s5pLFwoW/+MwvHgMs8a61XT2jddIoiNfBYNtJcG8nq7QQMsnbcEU4RXWDB8KEAsLemCBZ/RQ/gEDzQIDAQAB
+    encryptKey: dH*****************E27TTw==
+    notifyUrl:
+# 沙箱环境
+#  easyalipay:
+#    protocol: https.
+#    gatewayHost: openapi.alipaydev.com
+#    signType: RSA2
+#    appId: 2016100200645088
+#    merchantPrivateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCnYRYD+omT9FbR+lfHXVYkGK4MI66NFLaMqm7lexPec0reVbx5bRTgs+l/u7J3Jf5I4d/3v27a51voPqQE2PDM8/r16RRmF946na9l9hYcbRfZHdTFRmoJ+Epd3SahuDRvBm84c3sUdcbQXFFytyYgDdszYukOank8glKHzpwgMVznNEej/q6+aw9Fut2EJONpw6gBtpA5WowsxFcg+cCgLPG1gesruD30/WnOk2zXA4K8OknFh21g7Fd4bU0fNSBWjBD4p4iDlsEQ7krpGrK9/CI/xezREvk5745Y9pDMFRQRYpEAHiFKx+pYgvgfPWWi4me3Na4Y64mt6vbkdWxbAgMBAAECggEAZslyMaNLlXZ5Up2ABkhFPAmD6KSI7s6HhD6tt3MrsnHuyjawdYkNRyh0/iIP6KeGTs+XMJd4xilKAYdmRivLRLGXrigihMeniyuGqQDEd1RvTr/JCBTDzbeSQ64pqSpr2LqE1o/kR55EJ3Rp+B6M5SZdNGNLZ7TvGr+VWx0AN6vXrQcX+W0Fmju6725RiSZqihAVNTpHbWNUZbqZIV/W/8pmwNW/2or59PCIyWeaBK8+4hIH1Hx5viAXYLSK4brOlP7w6uzzy+d49hNVrII8guPQ+9WF/CNg4og7loifVH5Dyd665uyny/0dBZf5IPVl0UF8OlY/wAJ6Y/10ue/yEQKBgQDwGBN260uqKOs5nIIPiILiIbKmF79iSstJwh3LJJGtA62NDCyA95LRddIv+FTkZ6F7kagSuOs4TSFtAIWm8tj0MufdGzsSmYabXE1DDNsUuNbXDyd1Ii6KtYN7oMHxzm0PPi6jGefgqS5yq8bG+28APVHQNYnwyuvS0w27J/azrwKBgQCyd8nUjCQvJJxWLnyxy352Xpr+CcXxKYHnKBwDm94elG+TnA/IxoE4iqdKT9yhRCI0pqQDbwyaRm0iXNviVS+oMLwyRotesQ+/ViFBQw26j4Fmaq2LQFti6mSHQjw+BLtxdIy1pVVxDxPBXg6zYRvq5Q3T/+fmbrfB6DxZcgsBFQKBgQC0N848gEfudQKD3xe9YyGjbdn0VHUC6dOIDN5iQpPag50893tcXvlkooTgHw5R1/vdjirTytw9CaBienbYJwd03dUvIaaIwpbIfVM9ViQIfOo+yZA7mynGUpNcNAIAaItyWqGVKffkqflEd+4gJFFgo6aKm/VrulWjjWqMJmZG3wKBgGaVko85SudKTQ8Aw65TQUr7EG5r4brA2CmuFYRBiQjc29HmR/BpogeFM6n0g+ayylKnYumSYJUhXEP/Smkr/Cvab6Mah6wTbPDXql/gEjklmgTr1vuPL7iI8OYKvaQMhk4t51/WPGmzd/CThzG25Rw9M5ijpYIALGIqgt4LPqYNAoGAFk8hYTT5PU1tNmCi/VVcsNNc4GlDytpgitP0nbBrp/XhjIBEjF1kxW/BrshIuQLzZ74jnM3P0Q6i9vtuqMHv5/Lcx9PSprCxCNSAn7W1VNmey2reqBtTFRo485AtsSntjGiaoORzpBKRZHBIMLSS8zEY+BSBwecaktF6IkmVuuI=    #私钥 pkcs8格式的
+#    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl1NG6w+hLEUwQvXViCSZJFoFY6vdkpK9/PRo7bBSo2JV1TOqHeAGBF0cGlH/GA16sPpXgE+hYIRv0fQLMmQxE54GHGhHCp2qXvqNdcOeUuazGkV70FBIXl0CUdgVkpuVhNCTa4llooCJsFGftD/BtcyW65TcY4GAU5Km+ZoLkgRQIV+cEBWgo4yHdQpJPYDZmMmG5rbY7YsL/gSPsAL1NwjdOH4lBv+IpTWGUJJ5KtLcN7d9F5a2KdEZTuN1JqeROgJp32q2hbpUeat4X/1S1xgpmZ1BJ7LgSALcn9bLmbXJLGc6wZ1sB4kp/TCgrkANJpzOPp7XMGjBXiZ4v6Yl9QIDAQAB #支付宝公钥
+#    encryptKey: GEyK+oXaeYiUy3Y4Qb25JQ==
+#    notifyUrl:
