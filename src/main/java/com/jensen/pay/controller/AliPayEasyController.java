@@ -6,6 +6,7 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.easysdk.factory.Factory;
 import com.alipay.easysdk.kernel.Config;
 import com.alipay.easysdk.kernel.util.ResponseChecker;
+import com.alipay.easysdk.payment.app.models.AlipayTradeAppPayResponse;
 import com.alipay.easysdk.payment.common.models.AlipayTradeCloseResponse;
 import com.alipay.easysdk.payment.common.models.AlipayTradeFastpayRefundQueryResponse;
 import com.alipay.easysdk.payment.common.models.AlipayTradeQueryResponse;
@@ -43,7 +44,12 @@ public class AliPayEasyController {
         //设置参数
         Factory.setOptions(config);
         //调用API
-        AlipayTradePrecreateResponse response = Factory.Payment.FaceToFace().asyncNotify("http://wv7aqa.natappfree.cc/alipay_easy/notify").preCreate("神领物流运费", orderNo, "0.10");
+        AlipayTradePrecreateResponse response = Factory.Payment.FaceToFace()
+                .asyncNotify("http://wv7aqa.natappfree.cc/alipay_easy/notify")
+                .preCreate("神领物流运费", orderNo, "0.10");
+        //App支付实例
+        AlipayTradeAppPayResponse pay = Factory.Payment.App().pay("神领物流运费", orderNo, "0.01");
+        String body = pay.getBody();
         String qrCode = createQrCode(response.getQrCode());
         System.out.println("qrCode = " + qrCode);
         // 3. 处理响应或异常
